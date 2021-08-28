@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/DailyJournalLogo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <title>Daily Journal</title>
+</head>
+
+<body>
+
+<!-- SECTION CONTAINING THE JOURNAL LOGO AND NAME.  CSS BEGINS AT .JOURNALHEADER AND ENDS AT A:ACTIVE  -->
+    <div class="journalHeader">
+        <a href="https://github.com/cwmurphy99" target="_blank">
+            <img class="journalLogo" src="/images/DailyJournalLogo.png" alt="Daily Journal">
+        </a>
+        <nav class="journalName">
+            <ul>
+                <li class="navNameLink"><a href="https://www.linkedin.com/in/christopherwmurphy/" target="_blank">Chris Murphy</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+<!-- SECTION CONTAINS THE DATE, JOURNAL ENTRIES, AND MOOD -->
+    <section class="journalSection">
+
+        <div class="dateBlock">
+            <h2 class="dailyJournalText">Daily Journal</h2>
+            <form action="">
+                <fieldset>
+                    <label for="journalDate">Date of entry</label>
+                    <input type="date" name="journalDate" id="journalDate">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="conceptBlock">
+            <form action="">
+                <fieldset>
+                    <label for="conceptsCovered">Concepts Covered</label>
+                    <input type="text" id="conceptsCovered" name="conceptsCovered">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="entryBlock">
+            <form action="">
+                <fieldset>
+                    <label for="journalEntry">Journal Entry</label>
+                    <textarea id="journalEntry" name="journalEntry"></textarea>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="moodBlock">
+            <form action="">
+                <fieldset>
+                    <label for="moodSelect">Mood for the day</label>
+                    <select>
+                        <option value="5">Extatic</option>
+                        <option value="4">Happy</option>
+                        <option selected="selected" value="3">Neutral</option>
+                        <option value="2">Sad</option>
+                        <option value="1">Depressed</option>
+                    </select>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="recordBlock">
+            <form action="">
+                    <button class="recordButton">Record Journal Entry</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>
