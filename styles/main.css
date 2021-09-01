@@ -4,6 +4,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Hina Mincho', serif;
+    font-weight: bold;
 }
 body { 
     margin: 0;
@@ -67,10 +68,46 @@ a:active{
     font-weight: 600;
 }
 
-.journalSection{
-    font-family: 'Hina Mincho', serif;
-}
+
+
 .dailyJournalText{
     display: flex;
     justify-content: center;
+    font-family: 'Hina Mincho', serif;
+    font-size: 3em;
+}
+.journalEntrySection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Hina Mincho', serif;
+}
+.journalEntryBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Hina Mincho', serif;
+}
+.recordBlock{
+    display: flex;
+    justify-content: center;
+}
+
+#entryLog{
+    display: flex;
+    flex-direction: column;
+}
+.journalEntryContainer{
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: center;
+}
+.journalEntry{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border: solid black;
 }
