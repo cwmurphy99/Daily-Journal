@@ -106,8 +106,9 @@ a:active{
 .journalEntry{
     display: flex;
     margin-top: 10px;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
     flex-direction: column;
     border: solid black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
