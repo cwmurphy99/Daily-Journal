@@ -1,0 +1,321 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Chris Murphy",
+            "email": "theworldisyours@gmail.com",
+            "dateJoined": 1630514814012,
+            "stateId": 35
+        }
+    ],
+    "journalEntry": [
+        {
+            "id": 1,
+            "date": "08/9/2021",
+            "concept": "Day One Orientation",
+            "entry": "We talked about pets, ice cream, and what hidden talents we have.",
+            "mood": "Ok",
+            "userId": 1
+        },
+        {
+            "id": 2,
+            "date": "08/10/2021",
+            "concept": "Flexbox",
+            "entry": "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
+            "mood": "Sad",
+            "userId": 1
+        },
+        {
+            "id": 3,
+            "date": "08/26/2021",
+            "concept": "Project Presentation",
+            "entry": "Today we presented our projects based on where we want to travel.  I'd love to see Fiji, but I have COVID.",
+            "mood": "Hopeful",
+            "userId": 1
+        }
+    ],
+    "moods": [
+        {
+            "id": 1,
+            "mood": "Depressed"
+        },
+        {
+            "id": 2,
+            "mood": "Sad"
+        },
+        {
+            "id": 3,
+            "mood": "Neutral"
+        },
+        {
+            "id": 4,
+            "mood": "Happy"
+        },
+        {
+            "id": 5,
+            "mood": "Extatic"
+        },
+        {
+            "id": 6,
+            "mood": "Meloncholy"
+        }, 
+        {
+            "id": 7,
+            "mood": "Surprised"
+        }, 
+        {
+            "id": 8,
+            "mood": "Stressed"
+        },
+        {
+            "id": 9,
+            "mood": "Mad"
+        },
+        {
+            "id": 10,
+            "mood": "Loved"
+        },
+        {
+            "id": 11,
+            "mood": "Lonely"
+        },
+        {
+            "id": 12,
+            "mood": "Weird"
+        },
+        {
+            "id": 13,
+            "mood": "Uncomfortable"
+        },
+        {
+            "id": 14,
+            "mood": "Touched"
+        },
+        {
+            "id": 15,
+            "mood": "Tired"
+        },
+        {
+            "id": 16,
+            "mood": "Thankful"
+        },
+        {
+            "id": 17,
+            "mood": "Sympathetic"
+        },
+        {
+            "id": 18,
+            "mood": "Smart"
+        },
+        {
+            "id": 19,
+            "mood": "Sleepy"
+        },
+        {
+            "id": 20,
+            "mood": "Silly"
+        }
+    ],
+    "states": [
+        {
+            "id": 1,
+            "stateName": "Alabama"
+        },
+        {
+            "id": 2,
+            "stateName": "Alaska"
+        },
+        {
+            "id": 3,
+            "stateName": "Arizona"
+        },
+        {
+            "id": 4,
+            "stateName": "Arkansas"
+        },
+        {
+            "id": 5,
+            "stateName": "California"
+        },
+        {
+            "id": 6,
+            "stateName": "Colorado"
+        },
+        {
+            "id": 7,
+            "stateName": "Connecticut"
+        },
+        {
+            "id": 8,
+            "stateName": "Delaware"
+        },
+        {
+            "id": 9,
+            "stateName": "Florida"
+        },
+        {
+            "id": 10,
+            "stateName": "Georgia"
+        },
+        {
+            "id": 11,
+            "stateName": "Hawaii"
+        },
+        {
+            "id": 12,
+            "stateName": "Idaho"
+        },
+        {
+            "id": 13,
+            "stateName": "Illinois"
+        },
+        {
+            "id": 14,
+            "stateName": "Indiana"
+        },
+        {
+            "id": 15,
+            "stateName": "Iowa"
+        },
+        {
+            "id": 16,
+            "stateName": "Kansas"
+        },
+        {
+            "id": 17,
+            "stateName": "Kentucky"
+        },
+        {
+            "id": 18,
+            "stateName": "Louisiana"
+        },
+        {
+            "id": 19,
+            "stateName": "Maine"
+        },
+        {
+            "id": 20,
+            "stateName": "Maryland"
+        },
+        {
+            "id": 21,
+            "stateName": "Massachusetts"
+        },
+        {
+            "id": 22,
+            "stateName": "Michigan"
+        },
+        {
+            "id": 23,
+            "stateName": "Minnesota"
+        },
+        {
+            "id": 24,
+            "stateName": "Mississippi"
+        },
+        {
+            "id": 25,
+            "stateName": "Missouri"
+        },
+        {
+            "id": 26,
+            "stateName": "Montana"
+        },
+        {
+            "id": 27,
+            "stateName": "Nebraska"
+        },
+        {
+            "id": 28,
+            "stateName": "Nevada"
+        },
+        {
+            "id": 29,
+            "stateName": "New Hampshire"
+        },
+        {
+            "id": 30,
+            "stateName": "New Jersey"
+        },
+        {
+            "id": 31,
+            "stateName": "New Mexico"
+        },
+        {
+            "id": 32,
+            "stateName": "New York"
+        },
+        {
+            "id": 33,
+            "stateName": "North Carolina"
+        },
+        {
+            "id": 34,
+            "stateName": "North Dakota"
+        },
+        {
+            "id": 35,
+            "stateName": "Ohio"
+        },
+        {
+            "id": 36,
+            "stateName": "Oklahoma"
+        },
+        {
+            "id": 37,
+            "stateName": "Oregon"
+        },
+        {
+            "id": 38,
+            "stateName": "Pennsylvania"
+        },
+        {
+            "id": 39,
+            "stateName": "Rhode Island"
+        },
+        {
+            "id": 40,
+            "stateName": "South Carolina"
+        },
+        {
+            "id": 41,
+            "stateName": "South Dakota"
+        },
+        {
+            "id": 42,
+            "stateName": "Tennessee"
+        },
+        {
+            "id": 43,
+            "stateName": "Texas"
+        },
+        {
+            "id": 44,
+            "stateName": "Utah"
+        },
+        {
+            "id": 45,
+            "stateName": "Vermont"
+        },
+        {
+            "id": 46,
+            "stateName": "Virginia"
+        },
+        {
+            "id": 47,
+            "stateName": "Washington"
+        },
+        {
+            "id": 48,
+            "stateName": "West Virginia"
+        },
+        {
+            "id": 49,
+            "stateName": "Wisconsin"
+        },
+        {
+            "id": 50,
+            "stateName": "Wyoming"
+        }
+    ]
+}
