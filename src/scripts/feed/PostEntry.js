@@ -1,6 +1,6 @@
 export const PostEntry = () => {
     return `
-    <div class="newPost">
+    <div class="newPost" id="newPost">
         <div>
             <input value=""
                    name="entry_date"

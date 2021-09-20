@@ -44,24 +44,6 @@
       "userId": 1,
       "timestamp": 1631220379576,
       "id": 4
-    },
-    {
-      "date": "2021-09-09",
-      "concept": "test",
-      "entry": "test",
-      "moodId": 6,
-      "userId": 1,
-      "timestamp": 1631220821106,
-      "id": 5
-    },
-    {
-      "date": "2021-09-09",
-      "concept": "test",
-      "entry": "test",
-      "moodId": 12,
-      "userId": 1,
-      "timestamp": 1631220825567,
-      "id": 6
     }
   ],
   "moods": [

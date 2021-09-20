@@ -9,12 +9,12 @@ const loggedInUser = {
 export const getLoggedInUser = () => {
     return loggedInUser;
 }
-
 export const getUsers = () => {
     return fetch("http://localhost:8088/users")
         .then(response => response.json())
 }
 
+//CREATE AN EMPTY ARRAY THAT WILL BE USED TO HOLD A BACKUP OF THE JOURNAL DATA
 let postCollection = [];
 
 export const usePostCollection = () => {
@@ -51,4 +51,14 @@ export const createPost = postObj => {
         postCollection = parsedResponse;
         return parsedResponse;
       })
+  }
+
+  export const deletePost = postId => {
+    return fetch(`http://localhost:8088/posts/${postId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    .then(response => response.json())
   }

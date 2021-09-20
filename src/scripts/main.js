@@ -1,4 +1,4 @@
-import { getPosts, getUsers, usePostCollection, createPost, getMoods } from "./data/DataManager.js";
+import { getPosts, getUsers, usePostCollection, createPost, getMoods, deletePost } from "./data/DataManager.js";
 import { MoodList, PostList } from "./feed/PostList.js";
 import { NavBar } from "./nav/NavBar.js";
 import { Footer } from "./nav/Footer.js";
@@ -42,6 +42,7 @@ const applicationElement = document.querySelector(".dailyjournal");
 
 //EVENT LISTENER FOR 'ON CLICK'
 applicationElement.addEventListener("click", event => {
+    event.preventDefault();
     //console.log("what was clicked: ", event.target)
     //USER CLICKS THE LOGOUT BUTTON => CONFIRMS LOGOUT
     if (event.target.id === "logout") {
@@ -54,10 +55,17 @@ applicationElement.addEventListener("click", event => {
         window.location.reload();
     } else if (event.target.id.startsWith("edit")) {
         //USER CLICKS THE EDIT BUTTON FOR A POST
-        console.log("post clicked", event.target.id.split("--"))
-        console.log("the id is", event.target.id.split("--")[1])
-    }
-})
+        console.log("post clicked", event.target.id.split("__"))
+        console.log("the id is", event.target.id.split("__")[1])
+    }else if (event.target.id.startsWith("delete")) {
+        const postId = event.target.id.split("__")[1];
+        deletePost(postId)
+          .then(response => {
+            showPostList();
+          })
+      }
+    })
+
 
 
 
@@ -132,72 +140,3 @@ const showFooter = () => {
 }
 
 startJournal();
-
-
-
-
-
-
-
-
-// EntryListComponent();
-
-
-// document.addEventListener("click", (event) => {
-// 	if (event.target.id.startsWith("edit")) {
-// 		console.log("post clicked", event.target.id.split("--"))
-// 		console.log("the id is", event.target.id.split("--")[1])
-// 	}
-// })
-
-// document.addEventListener("click", (event) => {
-// 	if (event.target.type === "button") {
-// 		console.log("you clicked the button!", event);
-// 	}
-// })
-
-// const showPostEntry = () => { 
-//     //Get a reference to the location on the DOM where the nav will display
-//     const entryElement = document.querySelector(".entryForm");
-//     entryElement.innerHTML = PostEntry();
-//   }
-
-//   const startJournal = () => {
-// 	  JournalEntryComponent();
-// 	  getJournalEntries();
-// 	  showPostEntry();
-//   }
-
-
-// document.addEventListener("click", event => {
-// 	event.preventDefault();
-// 	if (event.target.id === "newPost__submit") {
-// 		console.log(event);
-// 		//collect the input values into an object to post to the DB
-// 		const entry_date = document.querySelector("input[name='entry_date']").value
-// 		const concept = document.querySelector("input[name='concepts_covered']").value
-// 		const journal_entry = document.querySelector("textarea[name='journal_entry']").value
-// 		const journal_mood = document.querySelector("input[name='journal_mood']").value
-// 		//we have not created a user yet - for now, we will hard code `1`.
-// 		//we can add the current time as well
-// 		const postObject = {
-// 			date: entry_date,
-// 			concept: concept,
-// 			entry: journal_entry,
-// 			mood: journal_mood,
-// 			userId: 1,
-// 			timestamp: Date.now()
-// 		}
-// 		if (entry_date && concept && journal_entry && journal_mood) {
-// 			// be sure to import from the DataManager
-// 			createPost(postObject)
-// 				.then(dbResponse => {
-// 					showPostList()
-// 				});
-// 		} else {
-// 			alert("You forgot some info...");
-// 		}
-// 	}
-// })
-
-// startJournal();
